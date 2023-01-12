@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag Drop application</title>
+</head>
+<body>
+    <div class="modal" id="card_form">
+        <div class="header">
+          <div class="title">Add card</div>
+          <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body">
+          <input type="text" id="card_input" /> 
+          <input type="submit" value="Add card" id="card_submit"/>
+        </div>
+      </div>
+    <div class = "dragdrop-container">
+        <div class = "color" id="no_status">
+            <h1>Red <button id = "add_btn" data-target-modal="#card_form"> + Add</button></h1>
+            <div class="card" draggable="true" style="background-color:lightcoral">
+                ball 
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:lightcoral">
+                bat  
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:lightcoral">
+                tennis
+                <span class = "close">&times;</span> 
+            </div>
+        </div>
+        <div class = "color" id="no1_status">
+            <h1>Blue <button id = "add_btn" data-target-modal="#card_form"> + Add</button></h1>
+            <div class="card" draggable="true" style="background-color:rgb(121, 168, 249)">
+                cricket
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:rgb(121, 168, 249)">
+                sports
+                <span class = "close">&times;</span> 
+                </div>
+                <div class="card" draggable="true" style="background-color:rgb(121, 168, 249)">
+                    football 
+                    <span class = "close">&times;</span> 
+                </div>
+                <div class="card" draggable="true" style="background-color:rgb(121, 168, 249)">
+                    NBA
+                    <span class = "close">&times;</span> 
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class = "color">
+            <h1>Green <button id = "add_btn" data-target-modal="#card_form"> + Add</button></h1>
+            <div class="card" draggable="true" style="background-color:rgb(68, 214, 68)">
+                world cup 
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:rgb(68, 214, 68)">
+                IPL
+                <span class = "close">&times;</span> 
+            </div>
+        </div>
+        <div class = "color">
+            <h1>Black <button id = "add_btn" data-target-modal="#card_form"> + Add</button></h1>
+            <div class="card" draggable="true" style="background-color:rgb(143, 145, 143)">
+                FIFA
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:rgb(143, 145, 143)">
+                INDIA
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:rgb(143, 145, 143)">
+                HOCKEY
+                <span class = "close">&times;</span> 
+            </div>
+        </div>
+    </div>
+
+
+    <div id="overlay"></div>
+    <script src = "script.js"></script>
+</body>
+</html>
