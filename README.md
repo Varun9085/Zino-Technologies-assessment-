@@ -1,1 +1,0 @@
-# Zino-Technologies-assessment-
